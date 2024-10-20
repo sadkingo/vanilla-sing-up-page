@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="src/assets/images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="src/assets/css/styles.css" />
+
+    <title>Sing-Up</title>
+  </head>
+  <body>
+    <main>
+      <div class="left-img">
+        <img src="./src/assets/images/side-img.png" alt="" />
+      </div>
+      <div class="right-side">
+        <div class="main-logo-container">
+          <img src="src/assets/images/logo.png" alt="logo" />
+        </div>
+        <div class="main-title">Create an account</div>
+        <p class="sub-title">Already have an acount? <a href="#">Log in</a></p>
+        <form class="main-form" action="#" method="post">
+          <div class="radio-group">
+            <div class="radio-1">
+              <input
+                type="radio"
+                name="userUse"
+                id="personalUse"
+                value="forPersonal"
+              />
+              <label for="personalUse">For personal</label>
+            </div>
+            <div class="radio-2">
+              <input
+                type="radio"
+                name="userUse"
+                id="businessUse"
+                value="forBusiness"
+              />
+              <label for="businessUse">For business</label>
+            </div>
+          </div>
+          <label for="email">Email address</label>
+          <input type="text" name="email" id="email" />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <label for="country">Country of residence</label>
+          <input type="text" name="country" id="country" />
+          <input type="button" value="Create an account" />
+          <p>
+            Or, continue with
+            <a href="#">Google</a> or <a href="#">Facebook</a>
+          </p>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
